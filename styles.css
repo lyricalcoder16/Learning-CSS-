@@ -73,3 +73,47 @@ div.text_shadow{
 #parent p::after{
     content: url(C:\Users\HP\PhpstormProjects\learning\Image\RIARALOGO.jpg);
 }
+/*linear gradients*/
+div.Gradients{
+    float: right;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;  
+    background: linear-gradient(DeepSkyBlue, Black);
+}
+div.Specified_gradients{
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;  
+    background: linear-gradient(DeepSkyBlue 20%, Black 20%);
+}
+div.Specified_gradients2{
+    float: center;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;  
+    background: linear-gradient(DeepSkyBlue 20%, Black 20%, yellowgreen 30%);
+}
+/*Radial gradients*/
+/*elipse is the default value*/
+div.radial_gradient_elipse{
+    height: 150px;
+    width: 200px;
+    color: #FFF;
+    background: -moz-radial-gradient(green, yellow, blue);   
+    background: -webkit-radial-gradient(green, yellow, blue);
+    background: -ms-radial-gradient(green, yellow, blue);
+}
+/*circle linear gradient*/
+div.radial_gradient_circle{
+    height: 150px;
+    width: 200px;
+    color: #FFF;
+    background: -moz-radial-gradient(circle, green, yellow, blue); 
+    background: -webkit-radial-gradient(circle, green, yellow, blue); 
+    background: -ms-radial-gradient(circle, green, yellow, blue); 
+}
