@@ -117,3 +117,61 @@ div.radial_gradient_circle{
     background: -webkit-radial-gradient(circle, green, yellow, blue); 
     background: -ms-radial-gradient(circle, green, yellow, blue); 
 }
+div.transitions{
+    width: 50px;
+    height: 50px;
+    background: #32CD32;
+    transition: width 3s;
+    -webkit-transition: width 3s;
+}
+div:hover {
+    width: 250px;
+}
+div.clock-wise_rotation{
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+    background-color: papayawhip;
+    transform: rotate(10deg);
+}
+div.anticlockwise_rotation{
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+    background-color: #32CD32;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
+div.translation {
+        width: 260px;
+        height: 50px;
+        margin-top: 30px;
+        background-color: palegoldenrod;
+        transform-origin: bottom center;
+        transform: translate(100px, 200px); 
+}
+div.skew{
+    padding: 50px;
+    position: absolute;
+    background-color: #32CD32;
+    transform: skew(30deg);
+    -webkit-transform: skew(30deg);
+}
+
+div.first {
+    width: 200px;
+    height: 100px;
+    background-color: #8BC34A;
+    transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    color:white;
+}
+div.second {
+    margin: 60px;
+    width: 200px;
+    height: 100px;
+    background-color: #8bc34a;
+    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5,1.5);
+    color:white;
+}
