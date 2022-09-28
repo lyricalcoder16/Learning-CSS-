@@ -175,3 +175,41 @@ div.second {
     -webkit-transform: scale(1.5,1.5);
     color:white;
 }
+div.keyframes{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: colorchange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: colorchange;
+    -webkit-animation-duration: 1s;
+}
+@keyframes colorchange{
+    0% {background-color: red; }
+    50% {background-color: green; }
+    100% {background-color: blue; }
+}
+@-webkit-keyframes colorchange {
+    0% {background-color: red; }
+    50% {background-color: green; }
+    100% {background-color: blue; }
+}
+.grayscale{
+    filter:grayscale(100%);
+}
+.Sepia{
+    filter:sepia(100%);
+}
+.saturate{
+    filter:saturate(100%);
+}
+.hue_rotate{
+    filter:hue-rotate(100deg)
+}
+.invert{
+    filter:invert(70%)
+}
+.blurred{
+    filter:blur(5px)
+}
